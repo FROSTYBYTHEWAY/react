@@ -37,7 +37,7 @@ console.log("2. Бюджетные аксессуары:", affordableAccessories
 
 const idToDelete = "p3";
 const remainingProducts = products.filter(item => item.id !== idToDelete);
-console.log("3. Товары после удаления p3:", remainingProducts.length); // 4
+console.log("3. Товары после удаления p3:", remainingProducts.length);
 
 console.log("\n===== .find() =====");
 
@@ -46,10 +46,10 @@ const foundProduct = products.find(item => item.id === targetId);
 console.log(`Найден: ${foundProduct?.title ?? "Товар не найден"}`);
 
 const topRated = products.find(item => item.rating >= 4.9);
-console.log("Топ товар:", topRated?.title); // "Беспроводная мышь"
+console.log("Топ товар:", topRated?.title);
 
 const missing = products.find(item => item.id === "p999");
-console.log("Результат поиска несуществующего:", missing); // undefined
+console.log("Результат поиска несуществующего:", missing);
 
 console.log("\n===== Method Chaining =====");
 
@@ -89,8 +89,8 @@ onlyInStock: true
 
 const updatedList = updateProductPrice(products, "p1", 7990);
 
-console.log("Аксессуары в наличии:", activeAccessories.length); // 2
-console.log("Новая цена p1:", getProductById(updatedList, "p1")?.price); // 7990
+console.log("Аксессуары в наличии:", activeAccessories.length);
+console.log("Новая цена p1:", getProductById(updatedList, "p1")?.price);
 
 console.log(`
 Метод .map() протестирован: 100% элементов трансформированы без мутации
