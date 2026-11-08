@@ -1,0 +1,16 @@
+{
+  "name": "homework-23-10",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Домашка 23.10: 30 задач (SPA/React, окружение, замыкания, массивы, объекты, async)",
+  "scripts": {
+    "test": "node --test tests/all.test.js",
+    "lint": "node scripts/lint.js",
+    "prebuild": "npm run lint",
+    "build": "node scripts/build.js",
+    "postbuild": "node scripts/dir-size.js dist",
+    "check-env": "node section2-env/07-check-env.js",
+    "validate-versions": "node section2-env/06-validate-versions.js fixtures/package.sample.json"
+  }
+}
