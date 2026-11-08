@@ -1,0 +1,9 @@
+{
+  "name": "practice-5-destructuring-spread",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node advanced-state-test.js"
+  }
+}
