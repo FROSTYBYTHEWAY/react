@@ -1,0 +1,10 @@
+{
+  "name": "async-react-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "verify": "node async-lab-verify.js"
+  }
+}
